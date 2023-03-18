@@ -1,0 +1,929 @@
+@import url('http://fonts.googleapis.com/css2?family=Fiara+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+} 
+        /* HomePage */
+
+.sidebar{
+    background-color:#510e8f;
+    /* background-color: rgb(221, 217, 217); */
+    font-family: 'Fiara Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+    position: absolute;
+    width: 20vh;
+}
+
+nav{
+    /* background-color: yellow; */
+    height: 80vh;
+    
+    
+    
+}
+
+
+.sidebar nav{
+    padding: 0px;
+    
+}
+
+/* real sidebar nav li */
+ 
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 25px 0;
+    margin-top: 30px;
+    
+} 
+
+
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    
+}
+
+.sidebar ul li a:hover{
+    color:dodgerblue;
+}
+
+
+.main{
+    /* background-color: yellow; */
+    width: 80vw;
+    padding: 23px;
+    margin:0 130px;
+    
+    
+    
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+
+}
+
+.infoContainer{
+    /* background-color: red; */
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: on;
+}
+
+.devInfo{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello{
+    font-size: 3em;
+    color: dodgerblue;
+    
+}
+.name{
+    font-size: 4em;
+    font-weight: bold;
+    font-family: 'Fiara Sans', sans-serif;
+    color: #510e8f;
+    margin-top: 0.5em;
+}
+
+
+.name:hover{
+    animation: effect linear 1s;
+}
+
+@keyframes effect {
+    0% {
+        transform: scale(1, 1);
+    }
+    25% {
+        transform: scale(1.3, 0.6);
+    }
+
+    50% {
+        transform: scale(1.1, 0.9);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+ 
+}
+
+.about{
+    font-size: 2em;
+
+     /* TypeWriter Effect */
+     color:#0000;
+     background:
+       linear-gradient(-90deg,#0000 5px,#0000 0) 10px 0,
+       linear-gradient(#212222 0 0) 0 0;
+     background-size:calc(var(--n)*1ch) 200%;
+     -webkit-background-clip:padding-box,text;
+     background-clip:padding-box,text;
+     background-repeat:no-repeat;
+     animation: 
+      b .7s infinite steps(1),   
+      t calc(var(--n)*.2s) steps(var(--n)) forwards;
+   }
+   
+   @keyframes t{
+     from {background-size:0 200%}
+   }
+   @keyframes b{
+     50% {background-position:0 -100%,0 0}
+ 
+   } 
+
+
+
+.moreabout{
+    margin-top: 2em;
+    font-size: 2em;
+    font-family: 'Fiara Sans', sans-serif;
+    
+}
+   
+
+
+
+.buttons{
+    margin-top: 35px;
+    font-size: 16px;
+    
+}
+
+.btn{
+    padding: 9px;
+    border-radius: 30px;
+    border-color: dodgerblue;
+    color: dodgerblue;
+    background-color: white;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 3px 3px;
+    cursor: pointer;
+}
+
+.btn-sm{
+    font-size: 10px;
+    padding: 7px 13px;
+    margin: 10px 0;
+}
+
+.btn:hover{
+    background-color:dodgerblue;
+    color: white;
+
+ }
+
+ .home{
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    font-size:18px;
+ }
+/*  
+.devPic img{
+    height: 58vh;
+
+} 
+
+.shape{
+    
+    
+} */
+
+
+
+dev.devPic{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.devPic img{
+    height: 50%;
+    position: absolute;
+    left: 76%;
+    top: 26%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+    .shape img{
+        margin-top: -54px;
+    margin-left: 4%;
+    height: 130%;
+
+    }
+
+ 
+.shape:hover .work{
+    bottom: 40px;
+
+    
+}
+
+.devPic:hover .kp{
+    /* left: 45%; */
+    left: 70%;
+} 
+
+                                    /* Services Page */
+
+
+                                    
+                                    /* .servicesCard
+                                    {
+                                        display: flex;
+                                         height: 80vh;
+                                         width: 80vw;
+                                         background-color: dodgerblue;
+                                         border-radius: 10px;
+
+                                     }
+
+
+                                    .services h2{
+                                        font-family: 'Source Code Pro', monospace;
+                                        margin: 12px;
+                                    }
+                                    
+                                    .services p{
+                                        font-family: 'Source Code Pro', monospace;
+                                        margin: 12px;
+                                    }
+                                    
+                                    .serviceCard1, .serviceCard2, .serviceCard3{
+                                        width:200px;
+                                        height:400px;
+                                        background-color: white;
+                                        color:  #5f10e8;
+                                        text-align: center;
+                                        margin-left: auto;
+                                        border-radius: 10px;
+                                        margin-top: auto;
+                                        margin-bottom: auto;
+                                        margin-right: auto;
+                                        
+                                    }
+                                    
+                                    .serviceCard-img{
+                                        margin-top: 15px;
+                                        width:60px;
+                                        cursor: pointer;
+                                        
+
+                                    }
+                                          Extra--
+                                    .servicesCard:hover{
+                                    background-color:#510e8f;
+                                    color: #510e8f;
+                                    color: white;
+                                    
+                                    }   Extraa End--
+                                    
+                                   .servicesCard:hover .serviceCard1:hover, .serviceCard2:hover, .serviceCard3:hover{
+                                    background-color: #510e8f;
+                                    color: whitesmoke;
+                                    
+                                    
+                                   }
+                                      */
+
+
+
+
+
+
+
+
+
+
+
+                                    /* 
+.servicesCard
+{
+    display: flex;
+    height: 40vh;
+    width: 60vw;
+    background-color: red;
+}
+
+ .serviceCard2, .serviceCard1, .serviceCard3
+{
+    margin-left: 20px;
+} */
+
+.allCards{
+    display: flex;
+    
+    background-color: #510e8f;
+    border-radius: 20px;
+    height: 70vh;
+
+    
+}
+
+h4{
+    color:#510e8f;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color:purple ;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    
+}
+
+ #firstCard, #secondCard, #thirdCard{
+    margin-left:20px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+ .servicesIcon{
+    height: 90px;
+    float: left;
+    margin-left: 105px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.servicesText {
+    font-size: 33px;
+    color: white;
+    margin-left: 31px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+.servicesText:hover{
+    color:#510e8f;
+    /* background-color: white;
+    border-radius: 8px; */
+}
+
+.arrow{
+    position: absolute;
+    margin-left: 162px;
+    cursor: pointer;
+    margin-top: -8px;
+}
+
+ .services  body{
+
+    margin: 0;
+
+    padding: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;  
+
+    font-family: sans-serif;
+
+    background-color: #f1f1f1; 
+    
+
+}
+
+
+
+
+.container .card .icon {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: #2c73df;
+
+}
+
+.container .card .icon .fa {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 80px;
+
+    color: #fff;
+
+}
+
+.container .card .slide {
+
+    width: 300px;
+
+    height: 200px;
+
+    transition: 0.5s;
+    
+    
+
+}
+
+.container .card .slide.slide1 {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 1;
+
+    transition: .7s;
+
+    transform: translateY(100px);
+
+}
+
+.container .card:hover .slide.slide1{
+
+    transform: translateY(0px);
+    
+
+}
+
+.container .card .slide.slide2 {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    transition: .8s;
+
+    transform: translateY(-100px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    
+
+}
+
+.container .card:hover .slide.slide2{
+
+    transform: translateY(0);
+    background-color: white;
+    
+
+}
+
+.container .card .slide.slide2::after{
+
+    content: "";
+
+    position: absolute;
+
+    width: 30px;
+
+    height: 4px;
+
+    bottom: 15px;
+
+    left: 50%;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #2c73df;
+    
+
+}
+
+.container .card .slide.slide2 .content p {
+
+    margin: 0;
+
+    padding: 0;
+
+    text-align: center;
+
+    color: #414141;
+    
+
+}
+
+.container .card .slide.slide2 .content h3 {
+
+    margin: 0 0 10px 0;
+
+    padding: 0;
+
+    font-size: 24px;
+
+    text-align: center;
+
+    color: #414141;
+
+} 
+
+
+
+
+
+
+                                    /* Contact Me Page */
+
+.icon{
+    
+    width: 8vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+
+
+.contactform {
+
+    margin: 10px;
+    padding: 0 34px;
+    font-family: 'Fiara Sans', sans-serif;
+}
+
+.contactform h1{
+
+    font-family: 'Source Code Pro', monospace;
+    /* text-align: center; */
+    /* padding: 12px 0; */
+    margin: 0px 0px;
+}
+
+.contactform  form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform  form div input{
+    /* width: 26vw; */
+    margin: 6px 0 0 0;
+    padding: 3px;
+    /* font-size: 20px; */
+}
+
+.contactform  form{
+    /* width: 26vw; */
+    margin: 0 30px;
+
+}
+
+.social{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35vw
+}
+
+.github, .instagram, .twitter,.linkdin{
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.linkdin:hover, .github:hover, .instagram:hover, .twitter:hover{
+    box-shadow: 0 0 0 4px #8155d3;
+    transition: color 0.3s;
+}
+
+#emailHelp {
+    font-size: 12px;
+    color: #510e8f;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+
+}
+
+#form-check{
+    flex-direction: row;
+}
+
+#form-check input{
+    width: 24px;
+    margin: 3px 0;
+}
+                                     /* BlogPage */
+
+
+.blogContainer{
+    background-color: #510e8f;
+    border-radius: 20px;
+    color: white;
+}
+
+.blogContainer h1{
+    text-align: center;
+}
+
+.blogItem{
+    margin: 20px;
+    font-family: 'Fiara Sans', sans-serif;
+}
+
+
+ h1{
+    font-family: 'Source Code Pro', monospace;
+    margin: 23px;
+}
+
+h2{
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+
+ p{
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Open Sans', sans-serif;
+
+}
+                                
+                                    /* My Intro Page */
+.intro h2{
+    font-family: 'Source Code Pro', monospace;
+    margin: 12px;
+    margin: 20px 0 50px 0;
+}
+
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+
+.aboutMe, .technology, .study{
+    width:400px;
+    height:600px;
+    background-color: white;
+    color:  #510e8f;
+    text-align: center;
+}
+
+
+.aboutMeBack, .study-Back, .technology-Back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+.aboutMe img, .technology img, .study img {
+    display: flex;
+    height: 42%;
+    margin-left: 79px;
+    margin-top: 157px;
+}
+
+
+
+.flip-card, .flip-card1, .flip-card2 {
+    background-color: #510e8f;
+    width: 25vw;
+    height: 70vh;
+    perspective: 1000px;
+    margin: 70px 0 0 10px;
+}
+  .flip-card-inner, .flip-card-inner1, .flip-card-inner2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+  }
+  
+  .flip-card:hover .flip-card-inner, .flip-card1:hover .flip-card-inner1, .flip-card2:hover .flip-card-inner2{
+    transform: rotateY(180deg);
+  
+}
+  
+  
+  .aboutMe, .aboutMeBack, .technology, .technology-Back, .study, .study-Back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+
+.card{
+    display: inline-flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End of css Card3 */
+
+
+
+.skillContainer{
+    padding: 12px;
+
+}
+
+.skillItem{
+   
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+    margin: 10px 0 0 20px;
+}
+
+
+.skill{
+    width: 239px;
+    height: 5px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.hundred{
+    width: 200px;
+    background-color: springgreen;
+}
+
+.eigthy{
+    width: 180;
+    background-color:#f23557;
+}
+
+
+.seventy5{
+    width: 150px;
+    background-color: #f0d43a;
+}
+
+.sixty{
+    width: 125px;
+    background-color: #ff5d9e;
+}
+
+.fifty{
+    width:100px;
+    background-color: aqua;
+}
+
+.t5{
+    width: 50px;
+    background-color: #fd5f00;
+}
+
+
+#value{
+    margin-left: 10px;
+}
+
+#value:hover{
+    color: #510e8f;
+}
+
+.skillStudy{
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+    margin: 10px 0 0 20px;
+
+}
+
+
+.sidebarGo{
+    transform: translate(-150px, 0px);
+    height: 100vh;
+    position: absolute;
+}
+
+
+.hamBurger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross{
+    margin-left: 88px;
+    margin-top: 2px;
+    width: 30px;
+}
+
+.ham{
+    margin-top: 10px;
+    
+}
+
+
+
+/* @media (max-width:1360px)  */
+@media (max-width:900px)
+{
+    /* Target portrait smartphones */
+    *{
+        /* background-color: rgb(253, 91, 91); */
+    }
+    
+    .devPic{
+        display: none;
+    }
+
+    .shape{
+        display: none;
+    }
+
+    .buttons{
+        font-size: 6px;
+    }
+
+    
+
+    .devInfo{
+        font-size: 10px;
+    }
+
+    .intro, .blogContainer, .contactform{
+        margin: 8px;
+    }
+
+
+    /* real sidebar */
+    /* .sidebar{
+        transform: translate(-150px, 0px);
+        height: 100vh;
+        position: absolute;
+    } */
+} 
+   
+
+
